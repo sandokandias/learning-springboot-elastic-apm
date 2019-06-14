@@ -15,7 +15,7 @@ $docker-compose up
 $ java -jar target/spring-boot-elastic-apm-0.0.1-SNAPSHOT.jar
 ```
 5. Get the PID of application
-6. Install the agent (more info about configs: https://www.elastic.co/guide/en/apm/agent/java/current/intro.html)
+6. Install the agent (_more about configs: https://www.elastic.co/guide/en/apm/agent/java/current/intro.html_)
 ```shell
 $java -jar apm-agent-attach-1.7.0.jar --pid <pid> --config 'capture_body=all'
 ```
