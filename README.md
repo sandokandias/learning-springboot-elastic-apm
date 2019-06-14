@@ -22,8 +22,9 @@ $java -jar apm-agent-attach-1.7.0.jar --pid <pid> --config 'capture_body=all'
 7. Open kibana (http://localhost:5601)
 8. Go to the "APM" item of the left menu
 9. The name of the application will be displayed, click on it
-
+![alt-text](https://github.com/sandokandias/spring-boot-elastic-apm/blob/master/img/Screenshot_2019-06-14_14-44-48.png)
 10. Some monitoring data will be displayed
+![alt-text](https://github.com/sandokandias/spring-boot-elastic-apm/blob/master/img/Screenshot_2019-06-14_14-49-25.png)
 11. Send some requests 
 ```shell
 curl -X POST \
@@ -37,3 +38,4 @@ curl -X POST \
 }'
 ```
 12. Some seconds later the http request will be displayed on Kibana
+![alt-text](https://github.com/sandokandias/spring-boot-elastic-apm/blob/master/img/Screenshot_2019-06-14_14-50-14.png)
