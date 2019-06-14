@@ -27,4 +27,4 @@ curl -X POST \
   "currency": "BRL"
 }'
 ```
-13. Some seconds later the http request will be displayed
+13. Some seconds later the http request will be displayed on Kibana
