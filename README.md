@@ -11,8 +11,8 @@ Execute the steps bellow:
 5. Run the application `$ java -jar target/spring-boot-elastic-apm-0.0.1-SNAPSHOT.jar`
 6. Get the PID of application
 7. Install the agent `$java -jar apm-agent-attach-1.7.0.jar --pid <pid> --config 'capture_body=all'`
-**capture_body options**: _off, errors, transactions, all_
-For more information: https://www.elastic.co/guide/en/apm/agent/java/current/intro.html
+⋅⋅* **capture_body options**: _off, errors, transactions, all_
+⋅⋅* For more information: https://www.elastic.co/guide/en/apm/agent/java/current/intro.html
 8. Open kibana (http://localhost:5601)
 9. Go to the "APM" item of the left menu
 10. The name of the application will be displayed, click on it
