@@ -15,12 +15,10 @@ $docker-compose up
 $ java -jar target/spring-boot-elastic-apm-0.0.1-SNAPSHOT.jar
 ```
 5. Get the PID of application
-6. Install the agent 
+6. Install the agent (more info about configs: https://www.elastic.co/guide/en/apm/agent/java/current/intro.html)
 ```shell
 $java -jar apm-agent-attach-1.7.0.jar --pid <pid> --config 'capture_body=all'
 ```
-For more information about configs: https://www.elastic.co/guide/en/apm/agent/java/current/intro.html
-
 7. Open kibana (http://localhost:5601)
 8. Go to the "APM" item of the left menu
 9. The name of the application will be displayed, click on it
