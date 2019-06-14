@@ -16,7 +16,8 @@ Execute the steps bellow:
 10. The name of the application will be displayed, click on it
 11. Some monitoring data will be displayed
 12. Send some requests 
-`curl -X POST \
+```shell
+curl -X POST \
   http://localhost:8080/payments \
   -H 'Content-Type: application/json' \
   -H 'X-Organization: zup' \
@@ -24,5 +25,6 @@ Execute the steps bellow:
   "description": "Dados adicional 3GB",
   "amount": 1599,
   "currency": "BRL"
-}'`
+}'
+```
 13. Some seconds later the http request will be displayed
