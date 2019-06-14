@@ -7,10 +7,12 @@ Execute the steps bellow:
 1. Create a sample SpringBoot application
 2. Download the library "apm-agent-attach-1.7.0.jar" from https://search.maven.org/search?q=g:co.elastic.apm%20AND%20a:apm-agent-attach&core=gav
 3. Create a docker-compose.yml file and configure containers for (APM-Server, Elasticsearch, Kibana)
-4. Execute`$docker-compose up`
-5. Run the application `$ java -jar target/spring-boot-elastic-apm-0.0.1-SNAPSHOT.jar`
+4. Execute```shell $docker-compose up```
+5. Run the application 
+```shell $ java -jar target/spring-boot-elastic-apm-0.0.1-SNAPSHOT.jar```
 6. Get the PID of application
-7. Install the agent `$java -jar apm-agent-attach-1.7.0.jar --pid <pid> --config 'capture_body=all'`
+7. Install the agent 
+```shell$java -jar apm-agent-attach-1.7.0.jar --pid <pid> --config 'capture_body=all'```
 ⋅⋅* **capture_body options**: _off, errors, transactions, all_
 ⋅⋅* For more information: https://www.elastic.co/guide/en/apm/agent/java/current/intro.html
 8. Open kibana (http://localhost:5601)
