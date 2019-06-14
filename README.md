@@ -22,6 +22,7 @@ $java -jar apm-agent-attach-1.7.0.jar --pid <pid> --config 'capture_body=all'
 7. Open kibana (http://localhost:5601)
 8. Go to the "APM" item of the left menu
 9. The name of the application will be displayed, click on it
+
 10. Some monitoring data will be displayed
 11. Send some requests 
 ```shell
