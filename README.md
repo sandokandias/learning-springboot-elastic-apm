@@ -37,5 +37,5 @@ curl -X POST \
   "currency": "BRL"
 }'
 ```
-12. Some seconds later the http request will be displayed on Kibana
+12. Some seconds later the http request will be displayed
 ![alt-text](https://github.com/sandokandias/spring-boot-elastic-apm/blob/master/img/Screenshot_2019-06-14_14-50-14.png)
