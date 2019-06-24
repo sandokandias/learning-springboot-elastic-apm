@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringBootApmAgentApplicationTests {
+public class ElasticApmApplicationTest {
 
 	@Test
 	public void contextLoads() {

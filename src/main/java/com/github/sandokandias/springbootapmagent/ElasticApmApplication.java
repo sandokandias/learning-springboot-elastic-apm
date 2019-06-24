@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootApmAgentApplication {
+public class ElasticApmApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootApmAgentApplication.class, args);
+        SpringApplication.run(ElasticApmApplication.class, args);
     }
 
 }
