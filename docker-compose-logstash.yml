@@ -3,8 +3,8 @@ services:
   beat:
     image: docker.elastic.co/apm/apm-server:7.1.1
     ports:
-      - "8200:8200"
-      - "8201:8200"
+      - "8300:8300"
+      - "8201:8300"
     environment:
       - apm-server.host=0.0.0.0
     volumes:
@@ -19,6 +19,7 @@ services:
       - kafka
     volumes:
       - ./:/config-dir
+      - ./logstash.yml:/usr/share/logstash/config/logstash.yml
     command: logstash -f /config-dir/logstash.conf
     depends_on:
       - kafka
@@ -33,7 +34,10 @@ services:
     environment:
       KAFKA_ADVERTISED_HOST_NAME: 192.168.0.22
       KAFKA_ADVERTISED_PORT: 9092
-      KAFKA_CREATE_TOPICS: "payments:1:1"
+      KAFKA_CREATE_TOPICS: "payments:1:1,\
+                           rw_payments_manager:1:1,\
+                           rw_payment_events:1:1,\
+                           rw_boleto_events:1:1"
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

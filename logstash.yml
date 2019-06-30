@@ -1,0 +1,2 @@
+config.reload:
+        automatic: true
