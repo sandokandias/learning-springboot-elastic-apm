@@ -28,13 +28,21 @@ $java -jar apm-agent-attach-1.7.0.jar --pid <pid> --config 'capture_body=all'
 11. Send some requests 
 ```shell
 curl -X POST \
-  http://localhost:8080/payments \
+  http://localhost:8080/payments/json \
   -H 'Content-Type: application/json' \
   -H 'X-Organization: zup' \
   -d '{
   "description": "Dados adicional 3GB",
   "amount": 1599,
-  "currency": "BRL"
+  "currency": "BRL",
+  "creditCard": {
+    "type": "MASTERCARD",
+    "number": "5568392674344894"
+  },
+  "customer": {
+    "cpf": "39782928070",
+    "name": "Mary Doo"
+  }
 }'
 ```
 12. Some seconds later the http request will be displayed
